@@ -13,5 +13,5 @@ install:
   - npm install
   - bower install
 script:
-  - gulp --gulpfile test-gulpfile.js
+  - npm test
   - tree public
