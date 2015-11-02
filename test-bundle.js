@@ -1,5 +1,4 @@
 var assets = require('.');
-
 module.exports = {
   bundle: {
     app: {
