@@ -2,9 +2,11 @@ language: node_js
 
 before_install:
   - npm install -g bower gulp
+  - apt-get install tree
 
 install:
   - npm install
   - bower install
 script:
   - gulp --gulpfile test-gulpfile.js
+  - tree public
