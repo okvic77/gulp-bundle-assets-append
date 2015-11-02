@@ -8,7 +8,6 @@ addons:
 
 before_install:
   - npm install -g bower gulp
-  - apt-get install tree
 
 install:
   - npm install
