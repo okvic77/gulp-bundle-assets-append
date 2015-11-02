@@ -1,7 +1,8 @@
 test*
-
+bower.json
 
 node_modules
 bower_components
 public
 bundle.result.json
+npm-debug.log

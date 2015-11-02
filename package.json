@@ -1,6 +1,6 @@
 {
   "name": "gulp-bundle-assets-append",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Add CSS url resources with rev.",
   "main": "index.js",
   "scripts": {
