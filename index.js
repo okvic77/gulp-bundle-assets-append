@@ -27,7 +27,7 @@ function transformFilename(file) {
   });
 }
 
-const PLUGIN_NAME = 'nodelol';
+var PLUGIN_NAME = 'nodelol';
 
 module.exports = {
   append: function() {
