@@ -1,6 +1,6 @@
 var gulp = require('gulp'),
   bundle = require('gulp-bundle-assets'),
-  assets = require('.');
+  assets = require('./index.js');
 
 gulp.task('default', function() {
   return gulp.src('test-bundle.js')

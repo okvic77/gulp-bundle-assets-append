@@ -1,4 +1,4 @@
-var assets = require('.');
+var assets = require('./index.js');
 module.exports = {
   bundle: {
     app: {
