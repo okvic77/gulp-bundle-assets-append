@@ -52,12 +52,12 @@ module.exports = {
             var fileRequired = path.resolve(dirname, newFile.pathname);
 
             var newFileVinyl = file.clone();
-            newFileVinyl.path = path.join(subDirectory, path.basename(newFile.pathname));
+            newFileVinyl.path = path.join(file.bundleOptions.bundleName, path.basename(newFile.pathname));
             newFileVinyl.contents = fs.readFileSync(fileRequired);
             transformFilename(newFileVinyl);
             assets.push(newFileVinyl);
             return urlNode.format({
-              pathname: path.join(subDirectory, path.basename(newFileVinyl.path)),
+              pathname: path.join(path.basename(file.bundleOptions.bundleName), path.basename(newFileVinyl.path)),
               hash: newFile.hash
             });
           }))
