@@ -32,6 +32,8 @@ var PLUGIN_NAME = 'nodelol';
 module.exports = {
   append: function() {
     var isInline = new RegExp("^data:", "i");
+    var isURL = new RegExp("^http", "i");
+
     var subDirectory = 'assets';
     var assets = [];
     return through.obj(function(file, enc, cb) {
@@ -44,7 +46,8 @@ module.exports = {
             source: 'source.css'
           })
           .use(url(function(url) {
-            if (isInline.test(url)) return url;
+
+            if (isInline.test(url) || isURL.test(url)) return url;
 
 
             var newFile = urlNode.parse(url);
